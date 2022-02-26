@@ -1,0 +1,28 @@
+{
+  "root": "apps/howtohelpukraine-e2e",
+  "sourceRoot": "apps/howtohelpukraine-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/howtohelpukraine-e2e/cypress.json",
+        "devServerTarget": "howtohelpukraine:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "howtohelpukraine:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/howtohelpukraine-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["howtohelpukraine"]
+}

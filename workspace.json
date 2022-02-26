@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "howtohelpukraine": "apps/howtohelpukraine",
+    "howtohelpukraine-e2e": "apps/howtohelpukraine-e2e"
+  }
+}
